@@ -1,10 +1,5 @@
 import {Browser} from 'puppeteer';
 
-export interface Element {
-	container: string;
-	text: string[];
-}
-
 export interface Link {
 	series: string;
 	brand: string;
@@ -16,8 +11,9 @@ export interface Link {
 }
 
 export interface Labels {
-	captcha?: Element;
-	inStock: Element;
+	outOfStock: string[];
+	captcha?: string[];
+	bannedSeller?: string[];
 }
 
 export interface Store {

@@ -12,6 +12,7 @@ const prettyJson = format.printf(info => {
 });
 
 export const Logger = winston.createLogger({
+	level: Config.logLevel,
 	format: format.combine(
 		format.colorize(),
 		format.prettyPrint(),
@@ -19,6 +20,7 @@ export const Logger = winston.createLogger({
 		format.simple(),
 		prettyJson
 	),
-	level: Config.logLevel,
-	transports: [new winston.transports.Console({})]
+	transports: [
+		new winston.transports.Console({})
+	]
 });

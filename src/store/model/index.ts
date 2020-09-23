@@ -5,8 +5,8 @@ import {AmazonCa} from './amazon-ca';
 import {AmazonDe} from './amazon-de';
 import {Asus} from './asus';
 import {AsusDe} from './asus-de';
-import {BAndH} from './bandh';
 import {BestBuy} from './bestbuy';
+import {BAndH} from './bandh';
 import {Config} from '../../config';
 import {Evga} from './evga';
 import {EvgaEu} from './evga-eu';
@@ -14,9 +14,8 @@ import {MicroCenter} from './microcenter';
 import {NewEgg} from './newegg';
 import {NewEggCa} from './newegg-ca';
 import {Nvidia} from './nvidia';
-import {OfficeDepot} from './officedepot';
 import {Store} from './store';
-import {Zotac} from './zotac';
+import {OfficeDepot} from './officedepot';
 
 const masterList = new Map([
 	[Adorama.name, Adorama],
@@ -25,16 +24,15 @@ const masterList = new Map([
 	[AmazonDe.name, AmazonDe],
 	[Asus.name, Asus],
 	[AsusDe.name, AsusDe],
-	[BAndH.name, BAndH],
 	[BestBuy.name, BestBuy],
+	[BAndH.name, BAndH],
 	[Evga.name, Evga],
 	[EvgaEu.name, EvgaEu],
 	[MicroCenter.name, MicroCenter],
 	[NewEgg.name, NewEgg],
 	[NewEggCa.name, NewEggCa],
 	[Nvidia.name, Nvidia],
-	[OfficeDepot.name, OfficeDepot],
-	[Zotac.name, Zotac]
+	[OfficeDepot.name, OfficeDepot]
 ]);
 
 const list = new Map();
